@@ -14,3 +14,47 @@
 .rm-navbar-max {
     display: none;
 }
+
+html {
+    background-color: #000;
+}
+
+body {
+    width: 1000px;
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+}
+
+.byline img {
+    float: left;
+    max-width: 80px;
+}
+
+.byline {
+    background-color: #fff;
+    overflow: auto;
+    padding: 10px;
+    border: 2px solid green;
+    max-width: 400px;
+    clear: both;
+}
+
+.byline-text {
+    display: block;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+.region-main {
+    display:inline;
+    float:left;
+    width:73.95833333%;
+    margin-left:.52083333%;
+    margin-right:.52083333%;
+    margin-left:8.85416667%
+}
+
+.site-logo {
+    display: none;
+}
