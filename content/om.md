@@ -16,11 +16,11 @@ views:
                 type: single
                 route: block/om-redovisa
 ---
-Om
+Om design (v2)
 ======================
 
-I kursen **Tekninsk webbdesign och användarbarhet**
+Kursen **Teknisk webbdesign och användbarhet**, a.k.a. _design_, lär webbprogrammeraren att tekniskt förbereda sin webbplats för design och användbarhet.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
+Kursen syftar till en orientering inom områden design och användbarhet, specifikt för tillämpningsområdet webb. Kursen har tekniken som utgångspunkt, där olika tekniker introduceras och används för att underlätta webbdesign och användbarhet för webbplatsen med syftet att skapa en korrekt och användarvänlig webbplats.
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/hand-design.jpg?w=300]
