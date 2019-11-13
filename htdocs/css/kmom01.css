@@ -16,14 +16,16 @@
 }
 
 html {
-    background-color: #000;
+    background-color: #eee;
 }
 
 body {
     width: 1000px;
     background-color: #fff;
+    overflow: auto;
     margin: auto;
     padding: 30px;
+    font-family: sans-serif;
 }
 
 .byline img {
@@ -35,7 +37,7 @@ body {
     background-color: #fff;
     overflow: auto;
     padding: 10px;
-    border: 2px solid green;
+    border: 2px solid #66bca4;
     max-width: 400px;
     clear: both;
 }
@@ -46,15 +48,22 @@ body {
     overflow: auto;
 }
 
-.region-main {
-    display:inline;
-    float:left;
-    width:73.95833333%;
-    margin-left:.52083333%;
-    margin-right:.52083333%;
-    margin-left:8.85416667%
-}
-
 .site-logo {
     display: none;
+}
+
+.region-header-col-1 {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.footer-column {
+    float: left;
+    width: 33%;
+}
+
+.outer-wrap-footer {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #66bca4;
 }
