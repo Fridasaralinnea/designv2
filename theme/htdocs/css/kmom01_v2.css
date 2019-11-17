@@ -1,0 +1,189 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: blue;
+}
+body {
+  overflow: auto;
+  margin: auto;
+  color: #333;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.inner-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 5px;
+  align-items: center;
+}
+.wrap-all {
+  background-color: #fff;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+.byline img {
+  float: left;
+  max-width: 80px;
+}
+.byline {
+  background-color: #fff;
+  overflow: auto;
+  padding: 10px;
+  border: 2px solid #66bca4;
+  max-width: 400px;
+  clear: both;
+}
+.byline-text {
+  display: block;
+  padding-left: 10px;
+  overflow: hidden;
+}
+.site-logo {
+  display: none;
+}
+.region-header-col-1 {
+  font-size: 30px;
+}
+.footer-column {
+  float: left;
+  width: 33%;
+}
+.outer-wrap-footer {
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid #66bca4;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1300px) {
+  .region-header-col-1 {
+    width: 15%;
+  }
+  .region-header-col-2 {
+    width: 70%;
+  }
+  .region-header-col-3 {
+    width: 15%;
+  }
+  .inner-wrap-footer {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .region-header-col-1 {
+    font-size: 20px;
+  }
+  .region-header-col-2 {
+    width: 75%;
+    font-size: 20px;
+  }
+  .region-header-col-3 {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .region-header-col-1 {
+    width: 50%;
+  }
+  .region-header-col-2 {
+    display: none;
+  }
+  .region-header-col-3 {
+    width: 50%;
+  }
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .region-main.has-sidebar {
+    width: 100%;
+  }
+  .region-main.has-sidebar-left.has-sidebar-right {
+    width: 100%;
+  }
+  .region-sidebar-right,
+  .region-sidebar-left {
+    width: 100%;
+  }
+  .region-sidebar-left.has-sidebar-right,
+  .region-sidebar-right.has-sidebar-left {
+    width: 100%;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
