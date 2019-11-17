@@ -14,7 +14,7 @@ return [
         "data" => [
             "baseTitle" => " | design",
             "bodyClass" => null,
-            "favicon" => "favicon.ico",
+            "favicon" => "image/theme/lotus-flower.png?",
             "htmlClass" => null,
             "lang" => "sv",
             "stylesheets" => [
@@ -45,7 +45,7 @@ return [
             "data" => [
                 "homeLink"      => "",
                 "siteLogoText"  => "design",
-                "siteLogoTextIcon" => "image/theme/lotus-flower.png?width=50",
+                "siteLogoTextIcon" => "image/theme/lotus-flower-2.png?width=50",
                 "siteLogoTextIconAlt" => "Icon-bild",
             ],
         ],
