@@ -27,3 +27,14 @@ v2.0.0 (2019-11-17)
 * Adding style to header and footer.
 * Adding responsive style.
 * Adding style to sidebars.
+
+
+v3.0.0 (2020-01-03)
+-------------------------
+
+* Adding vertical-grid
+* Adding typographic-grid
+* Adding style with vgrid
+* Adding responsive style with vgrid
+* Adding new base-style for Kmom03
+* 
