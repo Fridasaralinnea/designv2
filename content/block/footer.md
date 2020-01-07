@@ -1,1 +1,1 @@
-Copyright 2019 Frida Larsson.
+Copyright &copy; 2019 Frida Larsson.
