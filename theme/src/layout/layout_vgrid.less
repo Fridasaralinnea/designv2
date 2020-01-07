@@ -2,6 +2,13 @@
 Layout for vgrid
 */
 
+@bgColorHeaderFooter: #555;
+@textColorHeaderFooter: #66bca4;
+@borderColorInfoByline: #66bca4;
+@bgColorInfo: #dcefea;
+@textColorInfo: #4eb195;
+@bgColorBylilne: #fff;
+
 
 // grid layout
 
@@ -41,8 +48,8 @@ Layout for vgrid
 
 .inner-wrap-header {
     #desinax-vgrid.grid(100%);
-    background-color: #555;
-    color: #66bca4;
+    background-color: @bgColorHeaderFooter;
+    color: @textColorHeaderFooter;
 }
 
 .region-header-col-1,
@@ -83,9 +90,9 @@ Layout for vgrid
 }
 
 .byline {
-    background-color: #fff;
+    background-color: @bgColorBylilne;
     padding: 10px;
-    border: 2px solid #66bca4;
+    border: 2px solid @borderColorInfoByline;
     // overflow: auto;
     // max-width: 400px;
     // clear: both;
@@ -104,9 +111,9 @@ Layout for vgrid
 }
 
 .outer-wrap-footer {
-    background-color: #555;
+    background-color: @bgColorHeaderFooter;
     border: none;
-    color: #66bca4;
+    color: @textColorHeaderFooter;
     // border: 2px solid #66bca4;
 }
 
@@ -164,10 +171,10 @@ Layout for vgrid
 // Style flashmessage
 
 .info {
-    border: 2px solid #66bca4;
-    background-color: #dcefea;
+    border: 2px solid @borderColorInfoByline;
+    background-color: @bgColorInfo;
     padding: 0.5em;
-    color: #4eb195;
+    color: @textColorInfo;
 }
 
 .flashmessage-icon {

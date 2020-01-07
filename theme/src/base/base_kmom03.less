@@ -1,9 +1,9 @@
 /**
  * Base style to affect HTML elements on a general scale. Kmom03
  */
-@bgColorHtml: blue; //#424242;
-@bgColorBody: #fff;
-@colorBody: #333;
+ @bgColorHtml: #eee;
+ @bgColorBody: #fff;
+ @textColorBody: #333;
 
 html {
     overflow-y: scroll;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    color: @colorBody;
+    color: @textColorBody;
     background-color: @bgColorBody;
     #desinax-hgrid.font(@fontSizeBody); // Activate the grid base font
 }
@@ -21,7 +21,7 @@ img {
 }
 
 .wrap-all {
-    background-color: #fff;
+    background-color: @bgColorBody;
 }
 
 
