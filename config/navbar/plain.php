@@ -38,5 +38,15 @@ return [
             "url" => "test",
             "title" => "Test.",
         ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapport för uppgift 1 i kmom04.",
+        ],
+        [
+            "text" => "Dagens bild",
+            "url" => "blogg",
+            "title" => "Dagens bild.",
+        ],
     ],
 ];
