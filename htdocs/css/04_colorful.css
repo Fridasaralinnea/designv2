@@ -5220,6 +5220,13 @@ Layout for vgrid
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+.img-column {
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
 .byline img {
   float: left;
   max-width: 80px;
