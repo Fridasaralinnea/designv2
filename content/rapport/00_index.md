@@ -3,4 +3,4 @@
 Redovisningstexter
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/redovisning/00_index.md`.
+Här hittar ni mina redivisningstexter för analysuppgifterna i kmom04, 05 och 06. 

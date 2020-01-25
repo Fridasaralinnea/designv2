@@ -1,21 +1,21 @@
 /*!
- * Stylesheet for design kmom04 colorful.
+ * Stylesheet for design kmom06 - designelement.
  *
- * This stylesheet is for the design course and kmom04 where we use LESS.
+ * This stylesheet is for the design course and kmom06 where we use designelements.
  */
 @font-face {
-  font-family: 'Amatic SC';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(https://fonts.gstatic.com/s/amaticsc/v13/TUZ3zwprpvBS1izr_vOMscGKfrUH.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Poiret One';
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Poiret One'), local('PoiretOne-Regular'), url(https://fonts.gstatic.com/s/poiretone/v8/UqyVK80NJXN4zfRgbdfbo55cUg.ttf) format('truetype');
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
 }
 /**
  * Import mixins.
@@ -4807,15 +4807,20 @@ html {
   background-color: #eee;
 }
 body {
-  color: #60174C;
-  background-color: #F9CBEC;
-  font: 18px/1.33333333 'Poiret One', cursive;
+  color: #ccc;
+  background-color: #fff;
+  font: 18px/1.33333333 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 img {
   max-width: 100%;
 }
 .wrap-all {
-  background-color: #F9CBEC;
+  background-image: url("../../htdocs/img/deer-big.jpg");
+  background-color: #fff;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 h1,
 h2,
@@ -4823,7 +4828,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Permanent Marker', cursive;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5134,6 +5139,134 @@ hr::after {
      */
 }
 /**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
+/**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
@@ -5184,8 +5317,8 @@ Layout for vgrid
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: #193554;
-  color: #F6FECF;
+  background-color: rgba(50, 50, 50, 0.9);
+  color: #765872;
 }
 .region-header-col-1,
 .region-header-col-3 {
@@ -5232,9 +5365,9 @@ Layout for vgrid
   max-width: 80px;
 }
 .byline {
-  background-color: #F6FECF;
+  background-color: rgba(50, 50, 50, 0);
   padding: 10px;
-  border: 2px solid #193554;
+  border: 2px solid #220019;
 }
 .byline-text {
   padding-left: 90px;
@@ -5247,9 +5380,9 @@ Layout for vgrid
   margin-right: 0.52083333%;
 }
 .outer-wrap-footer {
-  background-color: #193554;
+  background-color: rgba(50, 50, 50, 0.9);
   border: none;
-  color: #F6FECF;
+  color: #765872;
 }
 .site-footer {
   display: inline;
@@ -5311,10 +5444,10 @@ Layout for vgrid
   text-align: right;
 }
 .info {
-  border: 2px solid #193554;
-  background-color: #F6FECF;
+  border: 2px solid #220019;
+  background-color: rgba(118, 88, 114, 0.9);
   padding: 0.5em;
-  color: #60174C;
+  color: #220019;
 }
 .flashmessage-icon {
   float: right;
@@ -5710,6 +5843,20 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   .rm-small {
     display: none;
   }
+}
+.inner-wrap-main,
+.inner-wrap-breadcrumb {
+  background-color: rgba(50, 50, 50, 0.8);
+}
+.region-header {
+  font-size: 1.1em;
+  font-family: 'Permanent Marker', cursive;
+}
+a {
+  color: #765872;
+}
+.inner-wrap-flash {
+  opacity: 0;
 }
 /**
  * My own settings, not currently in their own module.
